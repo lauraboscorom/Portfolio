@@ -1,0 +1,30 @@
+.noisy {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../../assets/img/noise.gif);
+    background-size: 100px 100px;
+    opacity: .24;
+}
+
+.home-content {
+    height: 500px;
+
+    .home-title {
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: bold;
+        font-size: 10vw;
+        line-height: 10vw;
+        top: calc(50% - 10vw);
+        position: relative;
+    }
+}
