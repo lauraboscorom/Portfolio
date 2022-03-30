@@ -1,0 +1,39 @@
+.contact-content {
+    padding: 100px 5%;
+
+    .pc-screen {
+        background-color: #3d3b39;
+        border-radius: 40px;
+        position: relative;
+        box-sizing: border-box;
+        padding: 35%;
+    
+        .pc-display {
+            background-color: #f9f9f9;
+            height: calc(100% - 40px);
+            width: calc(100% - 40px);
+            left: 20px;
+            top: 20px;
+            position: absolute;
+            border-radius: 20px;
+            cursor: url('../../../assets/svg/cursor.svg'), auto;
+            padding: 25px;
+            overflow: auto;
+        }
+    }
+
+    .pc-base-1 {
+        height: 70px;
+        background-color: #3d3b39;
+        width: 120px;
+        margin: auto;
+    }
+
+    .pc-base-2 {
+        height: 60px;
+        background-color: #3d3b39;
+        width: 270px;
+        margin: auto;
+        border-radius: 20px;
+    }
+}

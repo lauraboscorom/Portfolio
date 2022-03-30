@@ -3,12 +3,38 @@ html, body {
 }
 
 a,
-.nav-link,
-a:hover,
-.nav-link:hover {
-    color: black;
-    text-transform: uppercase;
-    font-size: 20px;
+.nav-link {
+    &,
+    &:hover,
+    &:focus {
+        color: black;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+}
+
+.form-control {
+    border-radius: 22px;
+    margin-bottom: 15px;
+    padding: 12px;
+    cursor: url('../src/assets/svg/text-cursor.svg'), auto;
+
+    &:focus {
+        border-color: #e784c4;
+        box-shadow: 0 0 0 0.25rem rgba(253, 13, 105, 0.25);
+    }
+}
+
+textarea {
+    resize: none;
+}
+
+.btn-primary {
+    width: 100%;
+    border-radius: 22px;
+    background-color: #e784c4;
+    border-color: #e784c4;
+    padding: 10px;
 }
 
 // FONTS

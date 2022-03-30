@@ -15,16 +15,15 @@
     opacity: .24;
 }
 
-.home-content {
-    height: 500px;
+.web-content {
+    padding: 0px 20%;
+}
 
-    .home-title {
-        text-transform: uppercase;
-        text-align: center;
-        font-weight: bold;
-        font-size: 10vw;
-        line-height: 10vw;
-        top: calc(50% - 10vw);
-        position: relative;
+.home-content {
+    margin-bottom: 200px;
+
+    .home-picture {
+        width: 100%;
     }
 }
+

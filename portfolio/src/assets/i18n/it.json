@@ -1,0 +1,14 @@
+{
+    "header": {
+        "work": "Trabajos",
+        "about": "Sobre mí",
+        "contact": "Contacto"
+    },
+    "contact": {
+        "title": "¿Por qué no nos conocemos?",
+        "nameField": "Nombre completo",
+        "emailField": "Dirección de correo",
+        "messageField": "Mensaje",
+        "submit": "Enviar"
+    }
+}

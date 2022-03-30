@@ -1,12 +1,41 @@
+// Header padding
 .navbar {
     padding: 35px 50px 75px 50px;
 }
 
+// Logo (my name)
 .navbar-brand {
     padding: 0px;
     line-height: normal;
 }
 
+// Separation for navigation items
 .nav-item {
     margin: 0px 25px;
+}
+
+.dropdown .dropdown-menu {
+    min-width: fit-content;
+    padding: 0px;
+
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+
+    &.show {
+        max-height: 300px;
+        opacity: 1;
+    }
+
+    .dropdown-item {
+        padding: 0.25rem 1.5rem;
+        cursor: pointer;
+    }
 }

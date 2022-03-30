@@ -1,0 +1,14 @@
+{
+    "header": {
+        "work": "Work",
+        "about": "About",
+        "contact": "Contact"
+    },
+    "contact": {
+        "title": "Let's get in touch!",
+        "nameField": "Full name",
+        "emailField": "Email address",
+        "messageField": "Message",
+        "submit": "Submit"
+    }
+}
