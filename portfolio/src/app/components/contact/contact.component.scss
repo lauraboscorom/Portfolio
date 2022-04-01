@@ -25,7 +25,78 @@
                 bottom: 0;
                 left: 0;
                 right: 0;
-                padding: 25px;
+
+                .window-nav {
+                    height: 50px;
+                    background-color: #fff;
+                    align-items: center;
+                    padding: 0px 25px;
+                    border-bottom: 1px solid lightgray;
+
+                    .nav-circles {
+                        margin-right: 15px;
+                        
+                        div {
+                            width: 15px;
+                            height: 15px;
+                            border-radius: 35px;
+        
+                            &:not(:last-child) {
+                                margin-right: 5px;
+                            }
+        
+                            &.red {
+                                background-color: #ff504f;
+                                border: 1px solid #f74140;
+                            }
+        
+                            &.yellow {
+                                background-color: #ffbc00;
+                                border: 1px solid #ebaa3a;
+                            }
+        
+                            &.green {
+                                background-color: #00cc1e;
+                                border: 1px solid #22c334;
+                            }
+                        }
+                    }
+
+                    .nav-arrows {
+                        margin-right: 15px;
+                        line-height: 0px;
+
+                        img {
+                            width: 8px;
+
+                            &:not(:last-child) {
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+
+                    .nav-url {
+                        color: #514d4e;
+                        border: 1.7px solid #d9d9d9;
+                        border-radius: 5px;
+                        width: 280px;
+                        position: absolute;
+                        margin-left: auto;
+                        margin-right: auto;
+                        left: 0;
+                        right: 0;
+                        text-align: center;
+                    }
+                }
+
+                .window-content {
+                    padding: 25px;
+                    position: absolute;
+                    top: 50px;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                }
             }
 
             .fields {
