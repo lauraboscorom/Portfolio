@@ -1,11 +1,28 @@
 <div class="contact-content">
     <div class="pc-screen">
         <div class="pc-display">
-            <div class="form-content d-flex justify-content-between flex-column display-content">
-                <h2 class="mb-0">
-                    {{'contact.title' | translate}}
-                </h2>
-                <form class="d-flex justify-content-between flex-column align-items-center">
+            <div class="display-content">
+                <div class="window-nav d-flex justify-content-between">
+                    <div class="nav-left-options d-flex">
+                        <div class="nav-circles d-flex">
+                            <div class="red"></div>
+                            <div class="yellow"></div>
+                            <div class="green"></div>
+                        </div>
+                        <div class="nav-arrows">
+                            <img src="../../../assets/svg/left-arrow.svg" alt="Left arrow">
+                            <img src="../../../assets/svg/right-arrow.svg" alt="Right arrow">
+                        </div>
+                        <img src="../../../assets/svg/grid.svg" alt="Grid" width="14px">
+                    </div>
+                    <div class="nav-url">
+                        boscolaura.com
+                        <img src="../../../assets/svg/padlock.svg" alt="Dots" width="14px">
+                    </div>
+                    <img src="../../../assets/svg/plus.svg" alt="Plus" width="16px">
+                </div>
+                <form class="window-content d-flex justify-content-between flex-column align-items-center">
+                    <h3>{{'contact.title' | translate}}</h3>
                     <div class="fields">
                         <div class="form-group">
                             <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" [placeholder]="'contact.nameField' | translate">

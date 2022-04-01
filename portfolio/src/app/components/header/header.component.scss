@@ -5,8 +5,11 @@
 
 // Logo (my name)
 .navbar-brand {
-    padding: 0px;
-    line-height: normal;
+    // padding: 0px;
+    // line-height: normal;
+    img {
+        width: 50px;
+    }
 }
 
 // Separation for navigation items

@@ -36,11 +36,21 @@ textarea {
     border-color: #e784c4;
     padding: 10px 35px;
     transition: all 0.2s;
-
-    &:hover {
-        transform: scale(1.1,1.1);
+    
+    &:hover,
+    &:active,
+    &:focus {
         background-color: #dd4daa;
         border-color: #dd4daa;
+    }
+
+    &:hover,
+    &:active {
+        transform: scale(1.1,1.1);
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 0.25rem rgba(253, 13, 105, 0.25);
     }
 }
 
