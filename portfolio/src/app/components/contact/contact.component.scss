@@ -17,8 +17,24 @@
             position: absolute;
             border-radius: 20px;
             cursor: url('../../../assets/svg/cursor.svg'), auto;
-            padding: 25px;
             overflow: auto;
+
+            .display-content {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding: 25px;
+            }
+
+            .fields {
+                width: 100%;
+            }
+
+            .btn-primary {
+                cursor: url('../../../assets/svg/cursor.svg'), auto;
+            }
         }
     }
 
