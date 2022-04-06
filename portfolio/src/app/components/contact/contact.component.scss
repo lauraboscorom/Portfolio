@@ -1,12 +1,15 @@
 .contact-content {
-    padding: 100px 5%;
+    padding: 100px 0px;
+    max-width: 853px;
+    margin: auto;
 
+    /* -------- PC SCREEN -------- */
     .pc-screen {
         background-color: #3d3b39;
         border-radius: 40px;
         position: relative;
         box-sizing: border-box;
-        padding: 35%;
+        height: 515px;
     
         .pc-display {
             background-color: #f9f9f9;
@@ -26,6 +29,7 @@
                 left: 0;
                 right: 0;
 
+                // WINDOW NAVEGATION
                 .window-nav {
                     height: 50px;
                     background-color: #fff;
@@ -89,6 +93,7 @@
                     }
                 }
 
+                // WINDOW CONTENT
                 .window-content {
                     padding: 25px;
                     position: absolute;
@@ -96,19 +101,20 @@
                     bottom: 0;
                     left: 0;
                     right: 0;
+
+                    .fields {
+                        width: 100%;
+                    }
+        
+                    .btn-primary {
+                        cursor: url('../../../assets/svg/cursor.svg'), auto;
+                    }
                 }
-            }
-
-            .fields {
-                width: 100%;
-            }
-
-            .btn-primary {
-                cursor: url('../../../assets/svg/cursor.svg'), auto;
             }
         }
     }
 
+    /* -------- PC BASES -------- */
     .pc-base-1 {
         height: 70px;
         background-color: #3d3b39;

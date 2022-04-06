@@ -1,4 +1,4 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, Inject, OnInit, ViewChild } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -12,6 +12,9 @@ export class HeaderComponent implements OnInit {
   languages: string[];
   translateService: TranslateService;
   currentLang: string;
+
+  // HTML Element for header
+  @ViewChild('header') header: ElementRef;
 
   constructor(translateService: TranslateService) {
     this.translateService = translateService;
@@ -30,6 +33,19 @@ export class HeaderComponent implements OnInit {
   useLanguage(language: string): void {
     this.translateService.use(language);
     this.currentLang = this.translateService.currentLang;
+  }
+
+  /**
+   * Adds or removes the background property so it comes transparent again (defined in your css)
+   * @param event window scroll event
+   */
+  @HostListener('window:scroll', ['$event'])
+  onScroll(event) {
+    if(window.pageYOffset > 50) {
+      this.header.nativeElement.classList.add('active');
+    } else {
+      this.header.nativeElement.classList.remove('active');
+    }
   }
 
 }
