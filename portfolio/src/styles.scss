@@ -13,17 +13,31 @@ a,
     }
 }
 
-.form-control {
-    border-radius: 22px;
-    margin-bottom: 15px;
-    padding: 12px;
-    cursor: url('../src/assets/svg/text-cursor.svg'), auto;
+.form-group {
+    position: relative;
 
-    &:focus {
-        border-color: #e784c4;
-        box-shadow: 0 0 0 0.25rem rgba(253, 13, 105, 0.25);
+    .form-control {
+        border-radius: 22px;
+        margin-bottom: 15px;
+        padding: 12px;
+        cursor: url('../src/assets/svg/text-cursor.svg'), auto;
+        background-image: none;
+        
+        &:focus {
+            border-color: #e784c4;
+            box-shadow: 0 0 0 0.25rem rgba(253, 13, 105, 0.25);
+        }
+    }
+
+    .input-tooltip {
+        position: absolute;
+        top: 17px;
+        right: 11px;
+        width: 15px;
+        height: 15px;
     }
 }
+
 
 textarea {
     resize: none;
