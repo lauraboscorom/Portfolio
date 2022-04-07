@@ -13,6 +13,9 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ContactComponent } from './components/contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +35,9 @@ import { ReactiveFormsModule } from '@angular/forms';
             useFactory: HttpLoaderFactory,
             deps: [HttpClient]
         }
-    })
+    }),
+    BrowserAnimationsModule,
+    TooltipModule
   ],
   providers: [
     TranslateService

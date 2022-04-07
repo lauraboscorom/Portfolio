@@ -3,7 +3,7 @@ html, body {
 }
 
 a,
-.nav-link {
+a.nav-link {
     &,
     &:hover,
     &:focus {
@@ -21,7 +21,10 @@ a,
         margin-bottom: 15px;
         padding: 12px;
         cursor: url('../src/assets/svg/text-cursor.svg'), auto;
-        background-image: none;
+
+        &.is-invalid {
+            background-image: none;
+        }
         
         &:focus {
             border-color: #e784c4;
@@ -29,21 +32,35 @@ a,
         }
     }
 
-    .input-tooltip {
-        position: absolute;
-        top: 17px;
-        right: 11px;
-        width: 15px;
-        height: 15px;
+    textarea.form-control {
+        resize: none;
     }
+
+    .error-icon-container {
+        position: absolute;
+        top: 13px;
+        right: 11px;
+        line-height: 0;
+        padding: 5px;
+
+        .error-icon {
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+    .customTooltip {
+        .tooltip-arrow.arrow::before {
+            border-top-color: #dc3545;
+        }
+
+        .tooltip-inner {
+            background-color: #dc3545;
+        }
+    } 
 }
 
-
-textarea {
-    resize: none;
-}
-
-.btn-primary {
+button.btn-primary {
     width: fit-content;
     border-radius: 35px;
     background-color: #e784c4;
@@ -73,3 +90,8 @@ textarea {
     font-family: "Outfit";
     src: local("Outfit"), url(./assets/fonts/Outfit-VariableFont_wght.ttf) format("truetype");
 }
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+/* Importing Datepicker SCSS file. */
+@import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";

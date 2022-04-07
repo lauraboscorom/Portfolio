@@ -9,6 +9,10 @@
         "nameField": "Full name",
         "emailField": "Email address",
         "messageField": "Message",
-        "submit": "Submit"
+        "submit": "Submit",
+        "errors": {
+            "required": "This field is required",
+            "email": "Enter a valid email address"
+        }
     }
 }

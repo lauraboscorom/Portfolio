@@ -16,7 +16,7 @@
                         <img src="../../../assets/svg/grid.svg" alt="Grid" width="14px">
                     </div>
                     <div class="nav-url">
-                        boscolaura.com
+                        <span>boscolaura.com</span>
                         <img src="../../../assets/svg/padlock.svg" alt="Dots" width="14px">
                     </div>
                     <img src="../../../assets/svg/plus.svg" alt="Plus" width="16px">
@@ -29,22 +29,28 @@
                             <input type="text" class="form-control" id="inputName" [placeholder]="'contact.nameField' | translate"
                                 name="name" formControlName="name"
                                 [ngClass]="{'is-invalid': formData.get('name').errors && formDir.submitted}">
-                            <img class="input-tooltip" *ngIf="formData.get('name').errors && formDir.submitted"
-                                src="../../../assets/svg/error.svg" alt="Error">
+                            <div class="error-icon-container" *ngIf="formData.get('name').errors && formDir.submitted"
+                                containerClass="customTooltip" [tooltip]="'contact.errors.' + getFirstError('name') | translate">
+                                <img class="error-icon" src="../../../assets/svg/error.svg" alt="Error">
+                            </div>
                         </div>
                         <div class="form-group">
                             <input type="email" class="form-control" id="inputEmail" [placeholder]="'contact.emailField' | translate"
                                 name="email" formControlName="email"
                                 [ngClass]="{'is-invalid': formData.get('email').errors && formDir.submitted}">
-                                <img class="input-tooltip" *ngIf="formData.get('email').errors && formDir.submitted"
-                                    src="../../../assets/svg/error.svg" alt="Error">
+                            <div class="error-icon-container" *ngIf="formData.get('email').errors && formDir.submitted"
+                                containerClass="customTooltip" [tooltip]="'contact.errors.' + getFirstError('email') | translate">
+                                <img class="error-icon" src="../../../assets/svg/error.svg" alt="Error">
+                            </div>
                         </div>
                         <div class="form-group">
                             <textarea class="form-control" id="inputMessage" rows="3" [placeholder]="'contact.messageField' | translate"
                                 name="message" formControlName="message"
                                 [ngClass]="{'is-invalid': formData.get('message').errors && formDir.submitted}"></textarea>
-                                <img class="input-tooltip" *ngIf="formData.get('message').errors && formDir.submitted"
-                                    src="../../../assets/svg/error.svg" alt="Error">
+                            <div class="error-icon-container" *ngIf="formData.get('message').errors && formDir.submitted"
+                                containerClass="customTooltip" [tooltip]="'contact.errors.' + getFirstError('message') | translate">
+                                <img class="error-icon" src="../../../assets/svg/error.svg" alt="Error">
+                            </div>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary">{{'contact.submit' | translate}}</button>

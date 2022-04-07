@@ -17,12 +17,16 @@ export class ContactComponent implements OnInit {
       name: new FormControl('', [Validators.required]),
       email: new FormControl('', [Validators.compose([Validators.required, Validators.email])]),
       message: new FormControl('', [Validators.required])
-    })
+    }, {updateOn:'submit'})
   }
 
-  onSubmit(contactInfo: any) {
+  onSubmit(contactInfo: any): void {
     if (this.formData.valid) {
       console.log('form submitted');
     }
+  }
+
+  getFirstError(field: string): string {
+    return Object.keys((this.formData.get(field).errors))[0]
   }
 }
